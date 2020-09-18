@@ -1,202 +1,126 @@
-import 'package:contacts_service/contacts_service.dart';
+import 'dart:async';
+
 import 'package:flutter/material.dart';
-//import 'package:permission_handler/permission_handler.dart';
-import 'dart:math';
+import 'package:speech_to_text/speech_recognition_error.dart';
+import 'package:speech_to_text/speech_recognition_result.dart';
+import 'package:yousafe/screens/screen.dart';
+import 'package:speech_to_text/speech_to_text.dart';
+import 'package:yousafe/api_repository.dart';
+
 
 void main() {
   runApp(MyApp());
   
 }
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class MyApp extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        
-        primarySwatch: Colors.blue,
-        
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
+  _MyAppState createState() => _MyAppState();
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class _MyAppState extends State<MyApp> {
+  SpeechToText speech;
 
-  
+  final timeout = const Duration(seconds: 2);
 
-  final String title;
+  bool _hasSpeech = false;
 
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
 
-class _MyHomePageState extends State<MyHomePage> {
-    List<Contact> contacts = [];
-    List<Contact> contactsFiltered = [];
-    Map<String, Color> contactsColorMap = new Map();
-    TextEditingController searchController = new TextEditingController();
+  String lastWords = "";
+  String lastError = "";
+  String lastStatus = "";
+
+  Timer timer;
 
   @override
   void initState() {
     super.initState();
-    getAllContacts();
-    //getPermissions();
-    searchController.addListener(() {
-        filterContacts();
-      });
-    
-  }
-//  getPermissions() async {
-//    if (await Permission.contacts.request().isGranted) {
-  //     getAllContacts();
-  //     searchController.addListener(() {
-  //       filterContacts();
-  //     });
-  //   }
-  // }
-
-
-  String flattenPhoneNumber(String phoneStr) {
-    return phoneStr.replaceAllMapped(RegExp(r'^(\+)|\D'), (Match m) {
-      return m[0] == "+" ? "+" : "";
-    });
+    speech = SpeechToText();
+    initSpeechState();
   }
 
-  getAllContacts() async {
-    List colors = [
-      Colors.green,
-      Colors.indigo,
-      Colors.yellow,
-      Colors.orange
-    ];
-    int colorIndex = 0;
-    List<Contact> _contacts = (await ContactsService.getContacts()).toList();
-    _contacts.forEach((contact) {
-      Color baseColor = colors[colorIndex];
-      contactsColorMap[contact.displayName] = baseColor;
-      colorIndex++;
-      if (colorIndex == colors.length) {
-        colorIndex = 0;
-      }
-    });
+  void handleTimeout() {
+    stopListening();
+    startListening();
+  }
+
+  void startListening() {
+    lastWords = "";
+    lastError = "";
+    timer = new Timer(timeout, handleTimeout);
+    speech.listen(
+        onResult: resultListener,
+        listenFor: timeout,
+        cancelOnError: true,
+        partialResults: true,
+        onDevice: true,
+        listenMode: ListenMode.confirmation);
+  }
+
+  void stopListening() {
+    speech.stop();
+  }
+
+  void resultListener(SpeechRecognitionResult result) {
     setState(() {
-      contacts = _contacts;
+      lastWords = "${result.recognizedWords} - ${result.finalResult}";
     });
-  }
 
-  filterContacts() {
-    List<Contact> _contacts = [];
-    _contacts.addAll(contacts);
-    if (searchController.text.isNotEmpty) {
-      _contacts.retainWhere((contact) {
-        String searchTerm = searchController.text.toLowerCase();
-        String searchTermFlatten = flattenPhoneNumber(searchTerm);
-        String contactName = contact.displayName.toLowerCase();
-        bool nameMatches = contactName.contains(searchTerm);
-        if (nameMatches == true) {
-          return true;
-        }
-
-        if (searchTermFlatten.isEmpty) {
-          return false;
-        }
-
-        var phone = contact.phones.firstWhere((phn) {
-          String phnFlattened = flattenPhoneNumber(phn.value);
-          return phnFlattened.contains(searchTermFlatten);
-        }, orElse: () => null);
-
-        return phone != null;
-      });
+    print(lastWords);
+    if (result.recognizedWords.toLowerCase() == 'help') {
+      print('match');
+      emergency();
     }
+  }
+
+  void emergency() async {
+    final status = await emergencyButtonPressed();
+    if (status) {
+      Scaffold.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Email Sent'),
+        ),
+      );
+    } else {
+      Scaffold.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Error occurred'),
+        ),
+      );
+    }
+  }
+
+  Future<void> initSpeechState() async {
+    bool hasSpeech = await speech.initialize(
+        onError: errorListener, onStatus: statusListener);
+
+    startListening();
+
+    if (!mounted) return;
+
     setState(() {
-      contactsFiltered = _contacts;
+      _hasSpeech = hasSpeech;
+    });
+  }
+
+  void errorListener(SpeechRecognitionError error) {
+    setState(() {
+      lastError = "${error.errorMsg} - ${error.permanent}";
+    });
+  }
+
+  void statusListener(String status) {
+    setState(() {
+      lastStatus = "$status";
+
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    bool isSearching = searchController.text.isNotEmpty;
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Container(
-        padding: EdgeInsets.all(20),
-        child: Column(
-          children: <Widget>[
-            Container(
-              child: TextField(
-                controller: searchController,
-                decoration: InputDecoration(
-                  labelText: 'Search',
-                  border: new OutlineInputBorder(
-                    borderSide: new BorderSide(
-                      color: Theme.of(context).primaryColor
-                    )
-                  ),
-                  prefixIcon: Icon(
-                    Icons.search,
-                    color: Theme.of(context).primaryColor
-                  )
-                ),
-              ),
-            ),
-            Expanded(
-              child: ListView.builder(
-                shrinkWrap: true,
-                itemCount: isSearching == true ? contactsFiltered.length : contacts.length,
-                itemBuilder: (context, index) {
-                  Contact contact = isSearching == true ? contactsFiltered[index] : contacts[index];
-                  
-                  var baseColor = contactsColorMap[contact.displayName] as dynamic;
-
-                  Color color1 = baseColor[800];
-                  Color color2 = baseColor[400];
-                  return ListTile(
-                    title: Text(contact.displayName),
-                    subtitle: Text(
-                      contact.phones.length > 0 ? contact.phones.elementAt(0).value : ''
-                    ),
-                   leading: (contact.avatar != null && contact.avatar.length > 0) ?
-                      CircleAvatar(
-                        backgroundImage: MemoryImage(contact.avatar),
-                      ) : 
-                      Container(
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          gradient: LinearGradient(
-                            colors: [
-                              color1,
-                              color2,
-                            ],
-                            begin: Alignment.bottomLeft,
-                            end: Alignment.topRight
-                          )
-                        ),
-                        child: CircleAvatar(
-                          child: Text(
-                            contact.initials(),
-                            style: TextStyle(
-                              color: Colors.white
-                            )
-                          ),
-                          backgroundColor: Colors.transparent
-                        )
-                      )
-                  );
-                },
-              ),
-            )
-          ],
-        ),
-      ),
+    return MaterialApp(
+      title: 'YouSafe',
+      home: EmergencyScreen(),
     );
   }
 }
