@@ -18,7 +18,22 @@ class EmergencyScreen extends StatelessWidget {
           ),
           color: Colors.red,
           shape: CircleBorder(),
-          onPressed: emergencyButtonPressed,
+          onPressed: () async {
+            final status = await emergencyButtonPressed();
+            if (status) {
+              Scaffold.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Email Sent'),
+                ),
+              );
+            } else {
+              Scaffold.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Error occurred'),
+                ),
+              );
+            }
+          },
         ),
       ),
     );

@@ -17,7 +17,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   SpeechToText speech;
 
   final timeout = const Duration(seconds: 2);
@@ -30,13 +29,11 @@ class _MyAppState extends State<MyApp> {
 
   Timer timer;
 
-
   @override
   void initState() {
     super.initState();
-    speech =  SpeechToText();
+    speech = SpeechToText();
     initSpeechState();
-    
   }
 
   void handleTimeout() {
@@ -47,7 +44,7 @@ class _MyAppState extends State<MyApp> {
   void startListening() {
     lastWords = "";
     lastError = "";
-    timer = new Timer(timeout, handleTimeout);  
+    timer = new Timer(timeout, handleTimeout);
     speech.listen(
         onResult: resultListener,
         listenFor: timeout,
@@ -69,7 +66,24 @@ class _MyAppState extends State<MyApp> {
     print(lastWords);
     if (result.recognizedWords.toLowerCase() == 'help') {
       print('match');
-      emergencyButtonPressed();
+      emergency();
+    }
+  }
+
+  void emergency() async {
+    final status = await emergencyButtonPressed();
+    if (status) {
+      Scaffold.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Email Sent'),
+        ),
+      );
+    } else {
+      Scaffold.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Error occurred'),
+        ),
+      );
     }
   }
 
@@ -98,8 +112,6 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -108,5 +120,3 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
-
-

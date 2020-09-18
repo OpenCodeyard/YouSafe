@@ -28,7 +28,7 @@ dependencies:
   # flutter_sms: ^2.0.0
   geolocator:
   speech_to_text:
-  contacts_service:
+  # contacts_service:
   # flutter_background_geolocation:
   # background_geolocation_firebase:
 

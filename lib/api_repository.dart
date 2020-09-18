@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_phone_state/flutter_phone_state.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:mailer/mailer.dart';
@@ -5,7 +6,7 @@ import 'package:mailer/smtp_server.dart';
 
 
 
-void emergencyButtonPressed() async {
+Future<bool> emergencyButtonPressed() async {
   final String username = 'hashtagsteam1@gmail.com';
   final String password = 'hashtags2020';
 
@@ -33,12 +34,14 @@ void emergencyButtonPressed() async {
   try {
     final sendReport = await send(message, smtpServer);
     print('Message sent: ' + sendReport.toString());
+    return true;
   } on MailerException catch (e) {
     print(e);
     print('Message not sent.');
     for (var p in e.problems) {
       print('Problem: ${p.code}: ${p.msg}');
     }
+    return false;
   }
 
   // FlutterPhoneState.startPhoneCall("9433285155"); 
