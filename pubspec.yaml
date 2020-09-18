@@ -24,7 +24,11 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_phone_state:
-  flutter_sms:
+  mailer:
+  flutter_sms: ^2.0.0
+  geolocator:
+  # flutter_background_geolocation:
+  # background_geolocation_firebase:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -34,6 +38,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
