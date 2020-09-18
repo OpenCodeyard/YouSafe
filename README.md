@@ -20,6 +20,6 @@
 - Share location and let your family follow your remote location.
 - Keep your contacts informed.
 - A voice recording feature on a certain combination in the background with cloud backup and no traces in the front, in case someone is being threatened.
-- call with single touch when in emergency.
+- call with single touch or voice command when in emergency.
 - The app should specify how long you want them to track your GPS location until you check in your intended destination. If fail to send an emergency alert to choosen contact.
 - The camera turns on automatically and start recording.
