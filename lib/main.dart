@@ -7,8 +7,10 @@ import 'package:yousafe/screens/screen.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'package:yousafe/api_repository.dart';
 
+
 void main() {
   runApp(MyApp());
+  
 }
 
 class MyApp extends StatefulWidget {
@@ -22,6 +24,7 @@ class _MyAppState extends State<MyApp> {
   final timeout = const Duration(seconds: 2);
 
   bool _hasSpeech = false;
+
 
   String lastWords = "";
   String lastError = "";
@@ -109,6 +112,7 @@ class _MyAppState extends State<MyApp> {
   void statusListener(String status) {
     setState(() {
       lastStatus = "$status";
+
     });
   }
 
@@ -120,3 +124,4 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
+
