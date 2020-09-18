@@ -1,16 +1,25 @@
-# yousafe
+# YouSafe
 
-A new Flutter project.
+## Team Name: YouSafe
+## Team Members:
+- Manish Kumar Barnwal
+- Suvranil Biswas
+- Anushka
 
-## Getting Started
+**Problem Statement:** When there is none to go to: In times of danger or trouble, there is nowhere to seek help from, like the police or any force of authority that might help in the situation, how can this be addressed? Hint: open to your creativity.
 
-This project is a starting point for a Flutter application.
+### Why do we need this App?
+- We have seen a lot of times the crimes happening while travelling alone, hence it becomes a necessity of the situation that we need something that gives safety to us and assurance to our loved ones that we are safe and sound and can seek help from them whenever needed.
+- We are using flutter to make this application so we are solving the problem of making separate applications for ios and android users.
+- Many existing applications are either having issues which we got  to know during the research (mention the issues as that was mentioned in my message.. I do not have that chat history)(the UI, functionalities  etc.)
 
-A few resources to get you started if this is your first Flutter project:
+### Our Mission: Everyone should feel safe on having this App on their Smart phones.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Features:
+- Panic Button, and trigger action by voice command, to send SOS alert to the contacts with phiysical location (GPS).
+- Share location and let your family follow your remote location.
+- Keep your contacts informed.
+- A voice recording feature on a certain combination in the background with cloud backup and no traces in the front, in case someone is being threatened.
+- call with single touch when in emergency.
+- The app should specify how long you want them to track your GPS location until you check in your intended destination. If fail to send an emergency alert to choosen contact.
+- The camera turns on automatically and start recording.
