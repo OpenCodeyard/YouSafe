@@ -25,8 +25,9 @@ dependencies:
     sdk: flutter
   flutter_phone_state:
   mailer:
-  flutter_sms: ^2.0.0
+  # flutter_sms: ^2.0.0
   geolocator:
+  speech_to_text:
   # flutter_background_geolocation:
   # background_geolocation_firebase:
 
