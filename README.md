@@ -1,11 +1,5 @@
 # YouSafe
 
-## Team Name: YouSafe
-## Team Members:
-- Manish Kumar Barnwal
-- Suvranil Biswas
-- Anushka
-
 **Problem Statement:** When there is none to go to: In times of danger or trouble, there is nowhere to seek help from, like the police or any force of authority that might help in the situation, how can this be addressed? Hint: open to your creativity.
 
 ### Why do we need this App?
@@ -23,3 +17,8 @@
 - call with single touch or voice command when in emergency.
 - The app should specify how long you want them to track your GPS location until you check in your intended destination. If fail to send an emergency alert to choosen contact.
 - The camera turns on automatically and start recording.
+
+### Maintainers:
+- [Manish Kumar Barnwal](https://github.com/imanishbarnwal)
+- [Suvranil Biswas](http://github.com/neil-dev)
+- [Anushka](https://github.com/Anushka-shukla)
