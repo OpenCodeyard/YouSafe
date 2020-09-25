@@ -18,6 +18,10 @@
 - The app should specify how long you want them to track your GPS location until you check in your intended destination. If fail to send an emergency alert to choosen contact.
 - The camera turns on automatically and start recording.
 
+Before you start contributing, check out the [Code of Conduct](CODEOFCONDUCT.md).
+
+Also, read the [contribution guidelines](CONTRIBUTING.md) to get started with your contributions.
+
 ### Maintainers:
 - [Manish Kumar Barnwal](https://github.com/imanishbarnwal)
 - [Suvranil Biswas](http://github.com/neil-dev)
