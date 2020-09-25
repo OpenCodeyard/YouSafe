@@ -1,44 +1,64 @@
+# Contributing to YouSafe:
+
+See also: [Code of Conduct](CodeOfConduct.md)
+
+## Welcome
+
+We are glad to have you join our team. Everyone is welcome to contribute via pull requests, create issues on GitHub, help others in the community, especially beginners by explaining to them stuff that they have doubts in, to find bugs and fix them, aid in our Documentation, sharing your idea and designs, or in any other way.
+
+
+We would request you to cooperate with our maintainers and comply with the revisions they request and maintain the code of conduct while working on this project.
+
 #### Steps:
 
 ![Steps](https://media.giphy.com/media/o5BzNDDFQnepi/giphy.gif)
 
 
-**1.** Fork [this](https://github.com/smaranjitghose/girlscript_app) repository.
+**1.** Fork [this](https://github.com/neil-dev/YouSafe) repository.
 
-**2.** Clone the forked repository.
+**2.** Fire up the terminal or Git Bash.
 
-```terminal
-git clone --depth 1 https://github.com/<your-github-username>/girlscript_app
-```
-
-**3.** Navigate to the project directory.
+**3.** Navigate to the folder/directory where you want to download the project.
 
 ```terminal
-cd girlscript_app
+cd DIRECTORY_PATH
 ```
 
-**4.** Create a new branch.
+**4.** Clone the forked repository.
+
+```terminal
+git clone https://github.com/<your-github-username>/YouSafe
+```
+
+**5.** Navigate to the project directory.
+
+```terminal
+cd YouSafe
+```
+
+**6.** Create a new branch.
 
 ```terminal
 git checkout -b <your_branch_name>
 ```
 
-**5.** Make changes in source code.
+**7.** Make changes in source code.
 
 ![changes](https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/200w_d.gif)
 
 
-**6.** Commit your changes.
+**8.** Commit your changes.
 ```terminal
-git checkout -b <your_branch_name>
+git add .
+git commit -m "COMMIT MESSAGE"
 ```
 
-**7.** Push your local branch to the remote repository.
+**9.** Push your local branch to the remote repository.
 ```terminal
 git push -u origin <your_branch_name>
 ```
 
-**8.** Create a Pull Request!
+**10.** Create a Pull Request!
 
 
 Finally, go to your repository in browser and click on `compare and pull requests`.
