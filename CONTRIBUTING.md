@@ -1,6 +1,6 @@
 # Contributing to YouSafe:
 
-See also: [Code of Conduct](CodeOfConduct.md)
+See also: [Code of Conduct](CODEOFCONDUCT.md)
 
 ## Welcome
 
