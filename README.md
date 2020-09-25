@@ -26,3 +26,5 @@ Also, read the [contribution guidelines](CONTRIBUTING.md) to get started with yo
 - [Manish Kumar Barnwal](https://github.com/imanishbarnwal)
 - [Suvranil Biswas](http://github.com/neil-dev)
 - [Anushka](https://github.com/Anushka-shukla)
+
+Feel free to reach out to us for any concern, and also must join our [telegram channel](https://t.me/yousafe20) for better conversation.
