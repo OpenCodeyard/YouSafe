@@ -10,15 +10,15 @@
 ### Our Mission: Everyone should feel safe on having this App on their Smart phones.
 
 ### Features:
-- Panic Button, and trigger action by voice command, to send SOS alert to the contacts with phiysical location (GPS).
+- Panic Button and trigger action by voice command, to send SOS alert to the contacts with phiysical location (GPS).
 - Share location and let your family follow your remote location.
 - Keep your contacts informed.
 - A voice recording feature on a certain combination in the background with cloud backup and no traces in the front, in case someone is being threatened.
 - call with single touch or voice command when in emergency.
 - The app should specify how long you want them to track your GPS location until you check in your intended destination. If fail to send an emergency alert to choosen contact.
-- The camera turns on automatically and start recording.
+- The camera turns on automatically and starts recording.
 
-**Note:** You can propose any feature request by just making an issue.
+**Note:** You can propose any feature request by creating a new issue.
 
 Before you start contributing, check out the [Code of Conduct](CODEOFCONDUCT.md).
 
@@ -29,4 +29,4 @@ Also, read the [contribution guidelines](CONTRIBUTING.md) to get started with yo
 - [Suvranil Biswas](http://github.com/neil-dev)
 - [Anushka](https://github.com/Anushka-shukla)
 
-Feel free to reach out to us for any concern, and also must join our [telegram channel](https://t.me/yousafe20) for better conversation.
+Feel free to reach out to us for any concern, and may also join our [telegram channel](https://t.me/yousafe20) for better conversation.
