@@ -14,7 +14,7 @@
 - [x] Share location and let your family follow your remote location.
 - [x] Keep your contacts informed.
 - [x] A voice recording feature on a certain combination in the background with cloud backup and no traces in the front, in case someone is being threatened.
-- [x] call with single touch or voice command when in emergency.
+- [x] Call with single touch or voice command when in emergency.
 - [x] The app should specify how long you want them to track your GPS location until you check in your intended destination. If fail to send an emergency alert to choosen contact.
 - [x] The camera turns on automatically and starts recording.
 
