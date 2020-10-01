@@ -30,3 +30,6 @@ Also, read the [contribution guidelines](CONTRIBUTING.md) to get started with yo
 - [Anushka](https://github.com/Anushka-shukla)
 
 Feel free to reach out to us for any concern, and may also join our [telegram channel](https://t.me/yousafe20) for better conversation.
+
+### License:
+The content of this repository is bound by the following [MIT](https://github.com/frbio/YouSafe/blob/master/LICENSE) License.
