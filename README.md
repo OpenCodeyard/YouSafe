@@ -24,6 +24,30 @@ Before you start contributing, check out the [Code of Conduct](CODEOFCONDUCT.md)
 
 Also, read the [contribution guidelines](CONTRIBUTING.md) to get started with your contributions.
 
+### Getting started
+
+#### Prerequisites
+
+- [Install Flutter](https://flutter.dev/docs/get-started/install)
+- [Set up an editor](https://flutter.dev/docs/get-started/editor) 
+
+
+#### Building and running
+
+First, make sure you have a local copy of this repository. Steps 1 – 5 of the [contribution guidelines](CONTRIBUTING.md) are one way to accomplish this.
+
+Next, run `flutter pub get` from the project root to install dependencies.
+
+All that's left is to open the project in your editor of choice!
+
+If your editor doesn't support or detect appropriate build configurations for the project, you can build and run it manually from the terminal. Note that this has to be run form the project root.
+
+```sh
+flutter run # runs a debug build
+```
+
+You can read more about build modes [here](https://flutter.dev/docs/testing/build-modes).
+
 ### Maintainers:
 - [Manish Kumar Barnwal](https://github.com/imanishbarnwal)
 - [Suvranil Biswas](http://github.com/neil-dev)
