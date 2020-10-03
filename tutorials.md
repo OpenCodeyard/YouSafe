@@ -21,7 +21,7 @@ You can follow any of the above to learn flutter, even if you have no prior expe
 
 - To start **commiting** [**changes to your projects**](https://docs.github.com/en/free-pro-team@latest/github/committing-changes-to-your-project)
 
-- To understand how **GitHub flow** actually look like refer the [**GitHub Flow Documentation**](https://guides.github.com/introduction/flow/).
+- To understand how **GitHub flow:octocat:** actually look like refer the [**GitHub Flow Documentation**](https://guides.github.com/introduction/flow/).
 
 - To write a seamless **documentation** refer [**Markdown syntax description**](https://daringfireball.net/projects/markdown/syntax) and [**Github flavoured Markdown**](https://github.github.com/gfm/#what-is-github-flavored-markdown-)
 
@@ -34,7 +34,7 @@ Some Interesting articles and videos for learning Git.
 - [**Youtube Videos**](https://youtu.be/MJUJ4wbFm_A) for learning Git
 
 
-## Adobe XD tutorials
+## Adobe XD tutorials ✒️
 
 - Tutorials from official [**Adobe Website**](https://helpx.adobe.com/xd/tutorials.html)
 - A detailed youtube playlist on [**Adobe XD**](https://www.youtube.com/playlist?list=PLkiM1tZke4mivrZRPcqp_8oHFxlD8-IP5)
