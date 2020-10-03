@@ -9,6 +9,14 @@
 
 > _**Our Mission: Everyone should feel safe on having this App on their Smart phones whenever they step out of their houses.**_
 
+### UI Templates
+
+<p>
+  <img src="https://github.com/neil-dev/YouSafe/blob/master/Logo/Logo.png" alt="Logo" width="120px" height="160px" hspace="15"/>
+  <img src="https://github.com/neil-dev/YouSafe/blob/master/UI%20Design%20Draft/Signin.png" alt="Logo" width="120px" height="160px" hspace="15"/>
+  <img src="https://github.com/neil-dev/YouSafe/blob/master/UI%20Design%20Draft/Authentication.png" alt="Logo" width="120px" height="160px" hspace="15"/>
+</p>
+
 ### Features:
 - [x] Panic Button and trigger action by voice command, to send SOS alert to the contacts with phiysical location (GPS).
 - [x] Share location and let your family follow your remote location.
