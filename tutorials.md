@@ -1,24 +1,21 @@
-# Flutter Tutorials
+<h1 align="center">Tutorials📰</h1>
+
+## Flutter Tutorials 💙 
 
 These are some of the articles and videos, from where you can *learn flutter* that too free of cost and then ***start contributing to this project. ☺️☺️***
 
-1. The official `Flutter docs,` the flutter docs are the best place if you want to learn flutter.
-   * https://flutter.dev/docs/reference/tutorials
+1. The official the [**flutter docs**](https://flutter.dev/docs/reference/tutorials) are the best place if you want to learn flutter.
 
-2. Tutorials Point Website also containes a detailed and `well structed content` for flutter.
-    * https://www.tutorialspoint.com/flutter/index.htm
+2. [**Tutorials Point**](https://www.tutorialspoint.com/flutter/index.htm) Website also containes a detailed and well structed content for flutter.
 
-3. The Net Ninja Flutter Playlist.
-   * https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ
+3. The [**Net Ninja**](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ) Flutter Playlist.
 
-4. M-tech viral Flutter Playlist.
-   * https://www.youtube.com/playlist?list=PLR2qQy0Zxs_UdqAcaipPR3CG1Ly57UlhV
+4. [**M-tech viral**](https://www.youtube.com/playlist?list=PLR2qQy0Zxs_UdqAcaipPR3CG1Ly57UlhV) Flutter Playlist.
+ 
+You can follow any of the above to learn flutter, even if you have no prior experience with flutter. These tutorials are **begineer-friendly.**
 
 
-You can follow any of the above to learn flutter, even if you have `no prior experience with flutter.` These tutorials are **begineer-friendly.**
-
-
-## Git Tutorials
+## Git Tutorials 🚩
 
 Some Interesting articles and videos for `learning Git.`
 
