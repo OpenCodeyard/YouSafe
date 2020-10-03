@@ -12,7 +12,7 @@ These are some of the articles and videos, from where you can *learn flutter* th
 
 4. [**M-tech viral**](https://www.youtube.com/playlist?list=PLR2qQy0Zxs_UdqAcaipPR3CG1Ly57UlhV) Flutter Playlist.
  
-You can follow any of the above to learn flutter, even if you have no prior experience with flutter. These tutorials are **begineer-friendly.**
+You can follow any of the above to learn flutter, even if you have no prior experience with flutter. These tutorials are **beginner-friendly.**
 
 
 ## Git Tutorials 🚩
