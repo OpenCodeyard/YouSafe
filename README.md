@@ -1,4 +1,5 @@
-<h1 align="center">YouSafe  <img src="https://github.com/neil-dev/YouSafe/blob/master/Logo/Logo.png" alt="Logo" width="100px" height="160px" hspace="10"/></h1>
+<h1 align="center">YouSafe</h1>
+<img src="https://github.com/neil-dev/YouSafe/blob/master/Logo/Logo.png" alt="Logo" width="100px" height="160px" hspace="10"/>
 
 **Problem Statement:** When there is no one to go to in times of danger or trouble, there is nowhere to seek help from, like the police or any force of authority that might help in the situation.
 
