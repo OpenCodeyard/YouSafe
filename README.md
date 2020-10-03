@@ -1,6 +1,6 @@
-# YouSafe
+<h1 align="center">YouSafe</h1>
 
-**Problem Statement:** When there is none to go to: In times of danger or trouble, there is nowhere to seek help from, like the police or any force of authority that might help in the situation, how can this be addressed? 
+**Problem Statement:** When there is no one to go to in times of danger or trouble, there is nowhere to seek help from, like the police or any force of authority that might help in the situation.
 
 ### Why do we need this App?
 - We have seen a lot of times the crimes happening while travelling alone, hence it becomes a necessity of the situation that we need something that gives safety to us and assurance to our loved ones that we are safe and sound and can seek help from them whenever needed.
@@ -17,30 +17,29 @@
   <img src="https://github.com/neil-dev/YouSafe/blob/master/UI%20Design%20Draft/Authentication.png" alt="Logo" width="120px" height="160px" hspace="15"/>
 </p>
 
-### Features:
-- [x] Panic Button and trigger action by voice command, to send SOS alert to the contacts with phiysical location (GPS).
-- [x] Share location and let your family follow your remote location.
-- [x] Keep your contacts informed.
-- [x] A voice recording feature on a certain combination in the background with cloud backup and no traces in the front, in case someone is being threatened.
-- [x] Call with single touch or voice command when in emergency.
-- [x] The app should specify how long you want them to track your GPS location until you check in your intended destination. If fail to send an emergency alert to choosen contact.
-- [x] The camera turns on automatically and starts recording.
+### Features :round_pushpin:
+-  Panic Button that triggers action by voice command, to send SOS:sos: alert to the contacts with phiysical location (GPS).
+-  Share location and let your family follow your remote location helps Keeping your contacts informed.  
+-  A voice recording feature with a certain combination in the background with cloud backup and no traces in the front, in case someone is being threatened.
+-  Call with single touch or voice command when in emergency.
+-  The app should specify how long you want them to track your GPS location until you check in your intended destination. If fail to send an emergency alert to choosen contact.
+-  The camera turns on automatically and starts recording.
 
-**Note:** Feel free to propose any new feature request by creating a new issue.
+**Note:** Feel free to propose any new feature request by creating a new issue.😊
 
 Before you start contributing, check out the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 Also, read the [contribution guidelines](CONTRIBUTING.md) to get started with your contributions.
 
-### Getting started
+## Getting started :rocket:
 
 #### Prerequisites
 
-- [Install Flutter](https://flutter.dev/docs/get-started/install)
-- [Set up an editor](https://flutter.dev/docs/get-started/editor) 
+- [**Install Flutter**](https://flutter.dev/docs/get-started/install)
+- [**Set up an editor**](https://flutter.dev/docs/get-started/editor) 
 
 
-#### Building and running
+#### Building and running :hammer:
 
 First, make sure you have a local copy of this repository. Steps 1 – 5 of the [contribution guidelines](CONTRIBUTING.md) are one way to accomplish this.
 
@@ -61,7 +60,7 @@ You can read more about build modes [here](https://flutter.dev/docs/testing/buil
 - [Suvranil Biswas](http://github.com/neil-dev)
 - [Anushka](https://github.com/Anushka-shukla)
 
-Feel free to reach out to us for any concern, and may also join our [telegram channel](https://t.me/yousafe20) for better conversation.
+Feel free to reach out to us for any concern you may also join our [telegram channel:link:](https://t.me/yousafe20) for better conversation.
 
 ### License:
-The content of this repository is bound by the following [MIT](LICENSE) License.
+The content of this repository is bound by [MIT](LICENSE) License.
