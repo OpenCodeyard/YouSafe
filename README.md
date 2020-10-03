@@ -20,7 +20,7 @@
 
 **Note:** Feel free to propose any new feature request by creating a new issue.
 
-Before you start contributing, check out the [Code of Conduct](CODEOFCONDUCT.md).
+Before you start contributing, check out the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 Also, read the [contribution guidelines](CONTRIBUTING.md) to get started with your contributions.
 
