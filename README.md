@@ -28,14 +28,14 @@
 </p>
 
 ### Features :round_pushpin:
--  Panic Button that triggers action by voice command, to send SOS:sos: alert to the contacts with phiysical location (GPS).
+-  Panic Button that triggers action by voice command, to send SOS :sos: alert to the contacts with phiysical location (GPS).
 -  Share location and let your family follow your remote location helps Keeping your contacts informed.  
 -  A voice recording feature with a certain combination in the background with cloud backup and no traces in the front, in case someone is being threatened.
 -  Call with single touch or voice command when in emergency.
 -  The app should specify how long you want them to track your GPS location until you check in your intended destination. If fail to send an emergency alert to choosen contact.
 -  The camera turns on automatically and starts recording.
 
-**Note:** Feel free to propose any new feature request by creating a new issue.😊
+**Note:** Feel free to propose any new feature request by creating a new issue. 😊
 
 Before you start contributing, check out the [Code of Conduct](CODE_OF_CONDUCT.md).
 
