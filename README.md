@@ -5,7 +5,8 @@
     <a href="http://makeapullrequest.com" target="_blank"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome"></a>
     <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/tesseractcoding/neoalgo">
     <img alt="GitHub issues" src="https://img.shields.io/github/issues/tesseractcoding/neoalgo">
-</p><br>
+</p>
+<br>
 **Problem Statement:** When there is no one to go to in times of danger or trouble, there is nowhere to seek help from, like the police or any force of authority that might help in the situation.
 
 ### Why do we need this App?
