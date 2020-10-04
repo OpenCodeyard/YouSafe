@@ -1,7 +1,7 @@
 <h1 align="center">YouSafe</h1>
 <p align="center"><img src="https://github.com/neil-dev/YouSafe/blob/master/Logo/Logo.png" alt="Logo" width="100px" height="120px" hspace="10"/><br>
 <p align="center">
-    <
+    
     <img src="https://img.shields.io/github/license/tesseractcoding/neoalgo?style=flat">
     <a href="http://makeapullrequest.com" target="_blank"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome"></a>
     <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/tesseractcoding/neoalgo">
