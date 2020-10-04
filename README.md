@@ -3,8 +3,8 @@
 <p align="center">    
     <img src="https://img.shields.io/github/license/neil-dev/YouSafe?style=flat">  
     <a href="http://makeapullrequest.com" target="_blank"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome"></a>
-    <img alt="GitHub pull requests" src="https://github.com/neil-dev/YouSafe/pulls">
-    <img alt="GitHub issues" src="https://github.com/neil-dev/YouSafe/issues">
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/tesseractcoding/neoalgo">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/tesseractcoding/neoalgo">
 </p>
 **Problem Statement:** When there is no one to go to in times of danger or trouble, there is nowhere to seek help from, like the police or any force of authority that might help in the situation.
 
