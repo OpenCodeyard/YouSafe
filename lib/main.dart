@@ -8,6 +8,8 @@ import 'package:yousafe/screens/screen.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'package:yousafe/api_repository.dart';
 
+import 'screens/emergency_screen.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -124,7 +126,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'YouSafe',
-      home: LoginScreen(),
+      home: EmergencyScreen(),
     );
   }
 }
