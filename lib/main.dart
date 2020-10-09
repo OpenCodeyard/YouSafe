@@ -10,23 +10,11 @@ import 'package:yousafe/api_repository.dart';
 
 
 void main() {
-  runApp(ByPass());
+  runApp(MyApp());
   
 }
 
-class ByPass extends StatefulWidget {
-  @override
-  _ByPassState createState() => _ByPassState();
-}
 
-class _ByPassState extends State<ByPass> {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: LoginScreen(),
-    );
-  }
-}
 
 
 class MyApp extends StatefulWidget {
