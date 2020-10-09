@@ -3,15 +3,31 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:speech_to_text/speech_recognition_error.dart';
 import 'package:speech_to_text/speech_recognition_result.dart';
+import 'package:yousafe/screens/login_screen.dart';
 import 'package:yousafe/screens/screen.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'package:yousafe/api_repository.dart';
 
 
 void main() {
-  runApp(MyApp());
+  runApp(ByPass());
   
 }
+
+class ByPass extends StatefulWidget {
+  @override
+  _ByPassState createState() => _ByPassState();
+}
+
+class _ByPassState extends State<ByPass> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: LoginScreen(),
+    );
+  }
+}
+
 
 class MyApp extends StatefulWidget {
   @override
@@ -120,7 +136,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'YouSafe',
-      home: EmergencyScreen(),
+      home: LoginScreen(),
     );
   }
 }
