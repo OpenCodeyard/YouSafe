@@ -10,7 +10,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF323232),
+      backgroundColor: Color(0xFF121212),
       body: SafeArea
         (
         child: Padding(
@@ -26,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Flexible(
                 child: Container(
                   height: 200.0,
-                  child: Image.asset('Logo/Logo.png'),
+                  child: Image.asset('assets/Logo.png'),
                 ),
 
               ),
@@ -43,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               TextField(
 
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.phone,
 
                   onChanged: (value) {
 
@@ -74,29 +74,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 width: 100.0,
                 height: 50.0,
                 bgColor:  Color(0xFF5DB075),
-                title: 'Log in',
+                title: 'Sign in',
                 borderRadius: BorderRadius.all(Radius.circular(40.0)),
 
 
               ),
 
-              SizedBox(
-                height: 20.0,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text('New here? Lets make YouSafe.' ),
-                  SizedBox(
-                    width: 5.0,
-                  ),
-                  CustomButton(
-                    borderRadius: null,
-                    bgColor: Colors.transparent,
-                    title: 'Sign in',
-                  )
-                ],
-              )
 
 
 
@@ -135,7 +118,8 @@ class CustomButton extends StatelessWidget {
 
         child: Center(
           child: Text(title,style: TextStyle(
-              color: Colors.white
+              color: Colors.white,
+            fontSize: 16
           ),),
         ),
       ),
