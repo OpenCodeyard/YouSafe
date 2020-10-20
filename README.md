@@ -49,7 +49,7 @@ Also, read the [contribution guidelines](CONTRIBUTING.md) to get started with yo
 - [**Set up an editor**](https://flutter.dev/docs/get-started/editor) 
 
 
-#### Building and running :hammer:
+#### Building and running 
 
 First, make sure you have a local copy of this repository. Steps 1 – 5 of the [contribution guidelines](CONTRIBUTING.md) are one way to accomplish this.
 
