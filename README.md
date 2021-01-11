@@ -3,9 +3,9 @@
 <p align="center">    
     <img src=https://img.shields.io/github/license/neil-dev/YouSafe>  
     <a href="http://makeapullrequest.com" target="_blank"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome"></a>
-    <img alt= "GitHub Hacktoberfest combined status" src="https://img.shields.io/github/hacktoberfest/2020/neil-dev/YouSafe">
+<!--     <img alt= "GitHub Hacktoberfest combined status" src="https://img.shields.io/github/hacktoberfest/2020/neil-dev/YouSafe"> -->
     <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/neil-dev/YouSafe">
-<!--     <img alt="GitHub issues" src="https://img.shields.io/github/issues/neil-dev/YouSafe"> -->
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/neil-dev/YouSafe">
 </p>
 <br>
 
@@ -28,7 +28,7 @@
 </p>
 
 ### Features :round_pushpin:
--  Panic Button that triggers action by voice command, to send SOS:sos: alert to the contacts with phiysical location (GPS).
+-  Panic Button that triggers action by voice command, to send SOS :sos: alert to the contacts with phiysical location (GPS).
 -  Share location and let your family follow your remote location helps Keeping your contacts informed.  
 -  A voice recording feature with a certain combination in the background with cloud backup and no traces in the front, in case someone is being threatened.
 -  Call with single touch or voice command when in emergency.
