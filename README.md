@@ -3,9 +3,9 @@
 <p align="center">    
     <img src=https://img.shields.io/github/license/neil-dev/YouSafe>  
     <a href="http://makeapullrequest.com" target="_blank"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome"></a>
-    <img alt= "GitHub Hacktoberfest combined status" src="https://img.shields.io/github/hacktoberfest/2020/neil-dev/YouSafe">
+<!--     <img alt= "GitHub Hacktoberfest combined status" src="https://img.shields.io/github/hacktoberfest/2020/neil-dev/YouSafe"> -->
     <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/neil-dev/YouSafe">
-<!--     <img alt="GitHub issues" src="https://img.shields.io/github/issues/neil-dev/YouSafe"> -->
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/neil-dev/YouSafe">
 </p>
 <br>
 
@@ -49,7 +49,7 @@ Also, read the [contribution guidelines](CONTRIBUTING.md) to get started with yo
 - [**Set up an editor**](https://flutter.dev/docs/get-started/editor) 
 
 
-#### Building and running :hammer:
+#### Building and running 
 
 First, make sure you have a local copy of this repository. Steps 1 – 5 of the [contribution guidelines](CONTRIBUTING.md) are one way to accomplish this.
 
