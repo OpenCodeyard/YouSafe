@@ -3,6 +3,7 @@
 <p align="center">    
     <img src=https://img.shields.io/github/license/neil-dev/YouSafe>  
     <a href="http://makeapullrequest.com" target="_blank"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome"></a>
+    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/neil-dev/YouSafe">
     <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/neil-dev/YouSafe">
     <img alt="GitHub issues" src="https://img.shields.io/github/issues/neil-dev/YouSafe">
 </p>
