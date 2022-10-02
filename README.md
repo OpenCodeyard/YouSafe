@@ -1,11 +1,12 @@
 <h1 align="center">YouSafe</h1>
-<p align="center"><img src="https://github.com/neil-dev/YouSafe/blob/master/Logo/Logo.png" alt="Logo" width="100px" height="120px" hspace="10"/><br>
+<p align="center"><img src="https://github.com/OpenCodeyard/YouSafe/blob/master/Logo/Logo.png" alt="Logo" width="100px" height="120px" hspace="10"/><br>
 <p align="center">    
-    <img src=https://img.shields.io/github/license/neil-dev/YouSafe>  
+    <img src=https://img.shields.io/github/license/OpenCodeyard/YouSafe>  
     <a href="http://makeapullrequest.com" target="_blank"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome"></a>
-    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/neil-dev/YouSafe">
-    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/neil-dev/YouSafe">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/neil-dev/YouSafe">
+    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/OpenCodeyard/YouSafe">
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/OpenCodeyard/YouSafe">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/OpenCodeyard/YouSafe">
+    <img alt="GitHub issues" src="https://img.shields.io/github/labels/OpenCodeyard/YouSafe/hacktoberfest">
 </p>
 <br>
 
@@ -22,9 +23,9 @@
 ### UI Templates
 
 <p>
-  <img src="https://github.com/neil-dev/YouSafe/blob/master/Logo/Logo.png" alt="Logo" width="120px" height="160px" hspace="15"/>
-  <img src="https://github.com/neil-dev/YouSafe/blob/master/UI%20Design%20Draft/Signin.png" alt="Logo" width="120px" height="160px" hspace="15"/>
-  <img src="https://github.com/neil-dev/YouSafe/blob/master/UI%20Design%20Draft/Authentication.png" alt="Logo" width="120px" height="160px" hspace="15"/>
+  <img src="https://github.com/OpenCodeyard/YouSafe/blob/master/Logo/Logo.png" alt="Logo" width="120px" height="160px" hspace="15"/>
+  <img src="https://github.com/OpenCodeyard/YouSafe/blob/master/UI%20Design%20Draft/Signin.png" alt="Logo" width="120px" height="160px" hspace="15"/>
+  <img src="https://github.com/OpenCodeyard/YouSafe/blob/master/UI%20Design%20Draft/Authentication.png" alt="Logo" width="120px" height="160px" hspace="15"/>
 </p>
 
 ### Features :round_pushpin:
