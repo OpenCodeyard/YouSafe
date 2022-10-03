@@ -66,12 +66,7 @@ flutter run # runs a debug build
 
 You can read more about build modes [here](https://flutter.dev/docs/testing/build-modes).
 
-### Maintainers:
-- [Manish Kumar Barnwal](https://github.com/imanishbarnwal)
-- [Suvranil Biswas](http://github.com/neil-dev)
-- [Anushka](https://github.com/Anushka-shukla)
-
-Feel free to reach out to us for any concern you may also join our [telegram channel:link:](https://t.me/yousafe20) for better conversation.
+Feel free to reach out to us for any concern you may also join our [telegram channel:link:](https://t.me/Open_Codeyard) for better conversation.
 
 ### License:
 The content of this repository is bound by [MIT](LICENSE) License.
