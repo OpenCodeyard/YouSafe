@@ -1,5 +1,3 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter_phone_state/flutter_phone_state.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:mailer/mailer.dart';
 import 'package:mailer/smtp_server.dart';
@@ -18,7 +16,7 @@ Future<bool> emergencyButtonPressed() async {
   final primaryContact = '9674429152';
 
   final Position _currentPosition =
-      await getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+  await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
 
   // TODO: retrieve the name of the current user.
   final String messageText =
