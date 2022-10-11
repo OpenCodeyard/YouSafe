@@ -9,25 +9,27 @@ class EmergencyScreen extends StatelessWidget {
         title: Text('Emergency'),
       ),
       body: Center(
-        child: RaisedButton(
-          padding: EdgeInsets.all(15),
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            padding: EdgeInsets.all(15),
+            backgroundColor: Colors.red,
+            shape: CircleBorder(),
+          ),
           child: Icon(
             Icons.call,
             color: Colors.white,
             size: 36,
           ),
-          color: Colors.red,
-          shape: CircleBorder(),
           onPressed: () async {
             final status = await emergencyButtonPressed();
             if (status) {
-              Scaffold.of(context).showSnackBar(
+              ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text('Email Sent'),
                 ),
               );
             } else {
-              Scaffold.of(context).showSnackBar(
+              ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text('Error occurred'),
                 ),
